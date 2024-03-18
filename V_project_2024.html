@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website Title</title>
+  <style>
+
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  section {
+    margin: 0;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 2em;
+    line-height: 1.5;
+    /* Adjusted line spacing */
+    text-align: center;
+    position: relative;
+  }
+
+  /* Add responsiveness */
+  @media (max-width: 600px) {
+    section {
+      background-size: cover;
+    }
+  }
+
+  /* Navigation Styles for Section 1 */
+  section:nth-child(1) .navigation {
+    position: absolute;
+    top: 10px;
+    /* Moved down by 6px */
+    right: 10px;
+    padding: 40px 26px 26px 26px;
+    /* Adjusted padding for increased spacing */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  section:nth-child(1) .navigation a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    /* Increased font size to 18px */
+    margin-right: 10px;
+    /* Increased spacing between navigation items */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  section:nth-child(1) .navigation a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  section:nth-child(1) .home-button {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 18px;
+    /* Increased font size to 18px */
+    padding: 2px;
+    /* Adjusted padding */
+    border-radius: 5px;
+  }
+/* Section 2 Styles */
+  section:nth-child(2) {
+    background-image: url('2.jpg');
+    height: 405px;
+    text-align: left;
+    /* Align text to the left */
+    padding: 20px;
+    /* Add padding to the section */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section:nth-child(2) .paragraph-box {
+    width: 60%;
+    /* Adjusted width for the paragraph box */
+    padding-right: 142px;
+    /* Added padding on the right for spacing */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Added background color with opacity */
+  }
+
+  section:nth-child(2) .paragraph {
+    font-size: 13px;
+    /* Adjusted font size for the paragraph */
+    line-height: 1.2;
+    /* Adjusted line spacing for the paragraph */
+  }
+
+ /* Section 3 Navigation Styles */
+section:nth-child(3) .navigation {
+position: absolute;
+top: 6px;
+right: 0;
+padding: 26px 20px 20px 20px; /* Adjusted padding for spacing */
+background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+}
+
+section:nth-child(3) .navigation a {
+text-decoration: none;
+font-size: 18px;
+margin-right: 10px;
+border-radius: 5px;
+padding: 8px;
+transition: background-color 0.3s;
+}
+
+section:nth-child(3) .navigation a:hover {
+background-color: rgba(255, 255, 255, 0.2);
+}
+
+section:nth-child(3) .all-button {
+background-color: #3498db; /* Light blue color */
+color: #fff; /* White text color */
+font-size: 18px;
+padding: 8px;
+border: 2px solid #3498db; /* Empty rectangle border of light blue color */
+border-radius: 5px;
+margin-right: 10px;
+}
+
+section:nth-child(3) .panorama-button,
+section:nth-child(3) .gallery-button,
+section:nth-child(3) .macro-button,
+section:nth-child(3) .journal-button {
+background-color: #000; /* Black color */
+color: #fff; /* White text color */
+font-size: 18px;
+padding: 8px;
+border: none;
+margin-right: 10px;
+}
+  section:nth-child(3) .image-box1 {
+    width: 1050px;
+    /* Adjusted width for the image box */
+    background-image: url('g.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 540px;
+    /* Set height to match the section height */
+  }
+
+
+
+  /* Section 4 Styles */
+  section:nth-child(4) {
+    background-image: url('4.jpg');
+    height: 473px;
+    text-align: left;
+    /* Align text to the left */
+    padding: 20px;
+    /* Add padding to the section */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section:nth-child(4) .paragraph-box {
+    width: 60%;
+    /* Adjusted width for the paragraph box */
+    padding-right: 142px;
+    /* Added padding on the right for spacing */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Added background color with opacity */
+  }
+
+  section:nth-child(4) .paragraph {
+    font-size: 18px;
+    /* Adjusted font size for the paragraph */
+    line-height: 1.5;
+    /* Adjusted line spacing for the paragraph */
+  }
+
+  section:nth-child(4) .image-box {
+    width: 560px;
+    /* Adjusted width for the image box */
+    background-image: url('s4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 313px;
+    /* Set height to match the section height */
+  }
+section:nth-child(4) a {
+color: white; /* Set the default color for links */
+transition: color 0.3s; /* Add a smooth transition effect for color changes */
+}
+
+section:nth-child(4) a:hover {
+color: white; /* Set the color for links when hovered */
+}
+  section:nth-child(4) .visit-button {
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    /* Added margin to separate the button from the text */
+  }
+
+  /* Section 6 Styles */
+  section:nth-child(6) {
+    background-image: url('6.jpg');
+    text-align: left;
+    /* Align text to the left */
+    padding: 20px;
+    /* Add padding to the section */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section:nth-child(6) .paragraph-box {
+    width: 569px;
+    /* Adjusted width for the paragraph box */
+    padding-right: 142px;
+    /* Added padding on the right for spacing */
+    background-color: rgba(255, 255, 255, 0.2);
+    /* Added background color with opacity */
+    height: 159px;
+  }
+
+  section:nth-child(6) .paragraph {
+    font-size: 20px;
+    /* Adjusted font size for the paragraph */
+    line-height: 1.5;
+    /* Adjusted line spacing for the paragraph */
+  }
+
+  /* Section 8 Styles */
+  section:nth-child(8) {
+    background-image: url('8.jpg');
+    text-align: left;
+    /* Align text to the left */
+    padding: 20px;
+    /* Add padding to the section */
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+  }
+
+  section:nth-child(8) .paragraph-box {
+    padding-right: -42px;
+    /* Added padding on the right for spacing */
+    background-color: rgba(255, 255, 255, 0);
+    /* Added background color with opacity */
+  }
+
+  section:nth-child(8) .paragraph {
+    font-size: 8px;
+    /* Adjusted font size for the paragraph */
+    line-height: 1.5;
+    /* Adjusted line spacing for the paragraph */
+  }
+
+  /* Replace 1.jpg, 2.jpg, 3.jpg, etc. with your actual image file names and dimensions */
+  section:nth-child(1) {
+    background-image: url('1.jpg');
+    height: 800px;
+  }
+
+  section:nth-child(2) {
+    background-image: url('2.jpg');
+    height: 405px;
+  }
+
+  section:nth-child(3) {
+    background-image: url('3.jpg');
+    height: 844px;
+  }
+
+  section:nth-child(5) {
+    background-image: url('5.jpg');
+    height: 305px;
+  }
+
+  section:nth-child(7) {
+    background-image: url('7.jpg');
+    height: 360px;
+    font-size: 30px;
+    color: #000;
+  }
+
+  section_nth-child(8) {
+    background-image: url('8.jpg');
+    height : 170px;
+  }
+section:nth-child(9) { background-image: url('9.jpg'); height: 50px;
+font-size: 10px;
+    color: white;
+}
+section:nth-child(9) a {
+color: white; /* Set the default color for links */
+transition: color 0.3s; /* Add a smooth transition effect for color changes */
+}
+
+section:nth-child(9) a:hover {
+color: white; /* Set the color for links when hovered */
+}
+</style>
+
+
+  
+
+  </head>
+<body>
+  <section>
+    <div class="navigation">
+      <div class="home-button">Home</div>
+      <a href="abc.abc">Features</a>
+      <a href="abc.xyz">Portfolio</a>
+      <a href="xyz.abc">Services</a>
+
+
+
+
+
+
+      <a href="xyx.xyz">Contact</a>
+    </div>
+    <div style="text-transform: uppercase; font-size: 1.18em; line-height: 1.8;"> <br><br>“I’m looking for the
+      unexpected.<br>
+      I’m looking for things I’ve never seen before.”</div>
+  </section>
+
+  <section class="paragraph-box">
+    <div class="paragraph">
+     <br><br><br>Apple pie icing sweet. Brownie<br> jelly-o applicake applicake <br> sweet roll liquorice bear claw. <br>Jujubes carrot cake<br> cotton candy sweet tart brownie. <br>Tiramisu applicake jujubes.</div>
+  </section>
+
+  <section class="navigation">
+    <div class="all-button">All</div>
+    <div class="panorama-button">Panorama</div>
+    <div class="gallery-button">Gallery</div>
+    <div class="macro-button">Macro</div>
+    <div class="journal-button">Journal</div>
+    <div class="image-box1"></div>
+  </section>
+
+  <section class="paragraph-box">
+    <div class="paragraph">
+      Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi <br> bears pastry gummi bears sesame
+      snaps I love unerdwear.com. Soufflé<br>cotton candy dessert candy ice cream wafer gummies cheesecake brownie.<br>
+      Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate <br> cake I love pudding. Ice cream I
+      love powder pudding apple pie <br> marshmallow. Cupcake marzipan oat cake bonbon I love candy canes toffee.
+    </div>
+    <div class="visit-button"><a href="https://abc.com" target="_blank">Visit Me</a></div>
+    <div class="image-box"></div>
+  </section>
+
+  <section><br>Unerdwear cookie liquorice. Cake donut cupcake lollipop soufflé candy.<br> Chocolate oat cake
+    <strong>@CHEESECAKE </strong> tootsie roll.</section>
+
+  <section class="paragraph-box">
+    <div class="paragraph">
+      Bear claw marzipan bear claw applicake I love muffin. Lemon drops gummi <br> bears pastry gummi bears sesame
+      snaps I love unerdwear.com. Soufflé<br>cotton candy dessert candy ice cream wafer gummies cheesecake brownie.<br>
+      Muffin chupa chups jelly beans sweet pie applicake. Croissant chocolate <br> cake I love pudding. Ice cream I
+      love powder pudding apple pie <br> marshmallow. Cupcake marzipan oat cake bonbon I love candy canes toffee.
+    </div>
+  </section>
+
+  <section>
+    <br>
+    Applicake chocolate cake wafer toffee pie soufflé wafer. Tart marshmallow wafer <br> macaroon cheesecake jelly.
+    Gingerbread cookie soufflé sweet roll sweet roll jelly-o.. <br><br>
+    <div class="paragraph">
+      <strong style="color: #3498db;">-walter white</strong>
+    </div>
+  </section>
+
+  <section>
+    <div class="input-container">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Enter your message" style="width: 713px; height :374px;"></textarea>
+    </div>
+
+    <div class="paragraph-box">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor velit sed augue aliquam, sit amet
+        tristique massa convallis. Nulla facilisi. Sed nec elit ac justo tempor ullamcorper ut in lectus.
+      </p>
+    </div>
+  </section>
+
+
+ <section>
+  <div class="navigation">
+  <a href="abc.abc">Home</a>
+      <a href="abc.xyz">Portfolio</a>
+      <a href="xyz.abc">Services</a>
+      <a href="xyx.xyz">Contact</a><div>
+</section>
+
+</body>
+
+</html>
